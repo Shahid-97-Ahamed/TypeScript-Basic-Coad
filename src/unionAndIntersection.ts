@@ -17,3 +17,26 @@ const getDeshboard =(role:UserRole)=>{
 }
 
 getDeshboard("guest")
+
+//intersection 
+
+type employee = {
+    id : string;
+    name:string;
+    mobileNumber:string;
+}
+
+type menager ={
+    dasignation:string;
+    timeSize:number;
+}
+
+type projectMember = employee | menager;
+
+const companeyProject:projectMember={
+    id:"1225",
+    name:"Adlof Hitler",
+    mobileNumber:"124524",
+    dasignation:"project manager",
+    timeSize:76
+};
